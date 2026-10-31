@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TP2 PowerShell - César Augusto Rodríguez</title>
+  <style>
+    body {font-family:Arial,sans-serif;background:#f5f7fb;color:#202735;margin:0}
+    main {max-width:800px;margin:40px auto;background:#fff;padding:32px;border-radius:12px;box-shadow:0 3px 16px #00000013}
+    h1 {font-size:1.8rem} h2 {margin-top:32px} p {line-height:1.6}
+    pre {padding:18px;border-radius:8px;background:#17202d;color:#ecf5ff;overflow-x:auto}
+    .nota {border-left:4px solid #5378b4;padding-left:12px}
+    @media(max-width:600px){main{margin:10px;padding:20px}}
+  </style>
+</head>
+<body><main>
+  <h1>Trabajo Práctico N.º 2 – PowerShell</h1>
+  <p><strong>Módulo:</strong> Programación para Seguridad Informática<br>
+     <strong>Docente:</strong> Lic. Carlos Pacheco<br>
+     <strong>Alumno:</strong> César Augusto Rodríguez</p>
+  <h2>Ejercicio 1: Saludar al usuario</h2>
+  <p>Este programa pide el nombre y luego muestra un saludo.</p>
+  <pre><code>$nombre = Read-Host "Ingrese su nombre"
+Write-Host "¡Hola $nombre!"</code></pre>
+  <h2>Ejercicio 2: Calcular la paga</h2>
+  <p>Este programa solicita las horas trabajadas y el costo por hora, y calcula el total.</p>
+  <pre><code>$horas = [decimal](Read-Host "Ingrese las horas trabajadas")
+$costo = [decimal](Read-Host "Ingrese el costo por hora")
+$paga = $horas * $costo
+Write-Host "La paga que le corresponde es: $ $paga"</code></pre>
+  <p class="nota">Los programas se pueden descargar desde el repositorio. Para ejecutarlos hay que utilizar una consola PowerShell en una computadora.</p>
+</main></body>
+</html>
